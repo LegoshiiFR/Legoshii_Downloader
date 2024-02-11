@@ -4,7 +4,7 @@
 
 ## Installation
 
-- Télécharger le fichier zip "Legoshii_Downloader.zip" [ICI](https://github.com/LegoshiiFR/Legoshii_Downloader/releases/tag/V1)
+- Télécharger le fichier zip "Legoshii_Downloader.zip" [ICI](https://github.com/LegoshiiFR/Legoshii_Downloader/releases/download/V1/Legoshii_Downloader.zip)
 - Extrait l'archive
 - Ouvre le fichier .bat
 
