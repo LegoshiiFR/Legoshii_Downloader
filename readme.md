@@ -6,7 +6,7 @@
 
 - Télécharger le fichier zip "Legoshii_Downloader.zip" [ICI](https://github.com/LegoshiiFR/Legoshii_Downloader/releases/tag/V1)
 - Extrait l'archive
-- Ouvre le fichier .exe
+- Ouvre le fichier .bat
 
 ## Licence
 
