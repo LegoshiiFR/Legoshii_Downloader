@@ -1,7 +1,7 @@
+import os
+os.system(f"title 🔎 Legoshii Downloader - Téléchargement des packages")
 print(
 """
-
-
 > Veuillez sélectionner l'option que vous souhaitez :
 [1] : TikGen (Python)
 [2] : Gen_Tools (Python)
