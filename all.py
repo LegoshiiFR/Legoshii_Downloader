@@ -3,13 +3,13 @@ os.system(f"title 🔎 Legoshii Downloader - Téléchargement des packages")
 def __main__():
     print(
     """[📦] : Version 1.0.3
-    [📁] : Legoshii Downloader - Téléchargement des packages
-    [📄] : Choissisez et télécharger les logiciels :
+[📁] : Legoshii Downloader - Téléchargement des packages
+[📄] : Choissisez et télécharger les logiciels :
 
-    [1] : TikGen (Python)
-    [2] : Gen_Tools (Python)
-    [3] : Video Converter (Python)
-    """    
+[1] : TikGen (Python)
+[2] : Gen_Tools (Python)
+[3] : Video Converter (Python)
+"""    
     )
     nombre = float(input("Entrez un nombre : "))
     if nombre == 1:
