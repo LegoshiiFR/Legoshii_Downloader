@@ -1,2 +1,2 @@
 @echo off
-py index.py
+py ../index.py
