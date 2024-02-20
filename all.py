@@ -1,6 +1,7 @@
 import os
 os.system(f"title 🔎 Legoshii Downloader - Téléchargement des packages")
 def __main__():
+    import time
     os.system("cls")
     print(
     """[📦] : Version 1.0.3
@@ -10,6 +11,7 @@ def __main__():
 [1] : TikGen (Python)
 [2] : Gen_Tools (Python)
 [3] : Video Converter (Python)
+[4] : Custom_Installer
 """    
     )
     nombre = float(input("Entrez un nombre : "))
@@ -22,6 +24,9 @@ def __main__():
                 download('TikGen')
             else:
                 download('TikGen')
+        else:
+            os.system("cls")
+            __main__()
     elif nombre == 2:
         print("\n\n>Gen_Tools est un logiciels python permettant de générer des comptes (non mis à jour) ! \n> Souhaitez vous le télécharger ?")
         rps = input("[Y/N] : ")
@@ -31,13 +36,29 @@ def __main__():
                 download('Gen_Tools')
             else:
                 download('Gen_Tools')
+        else:
+            os.system("cls")
+            __main__()
     elif nombre == 3:
         print("\n\n>Video Converter est un logiciels python permettant de convertir des vidéos (payany) ! \n> Souhaitez vous l'acheter ?")
         rps = input("[Y/N] : ")
         if rps == "Y" or rps == "y":
             download('Video_Converter')
+        else:
+            os.system("cls")
+            __main__()
+    elif nombre == 4:
+        print("\n\n Custom_Installer est un programme vous permettant de créer votre propre installateur de logiciel ou de fichier (un setup) ! \n> Souhaitez vous l'utiliser ?")
+        rps = input("[Y/N] : ")
+        if rps == "Y" or rps == "y":
+            download('Custom_Installer')
+        else:
+            os.system("cls")
+            __main__()
     else:
         print("Fermer le programme.")
+        time.sleep(2)
+        os.system("exit")
 def download(logiciel):
     import time
     import urllib.request
@@ -50,6 +71,9 @@ def download(logiciel):
     elif logiciel == 'Video_Converter':
          import webbrowser
          webbrowser.open("https://ko-fi.com/s/8d4991f5da")
+    elif logiciel == 'Custom_Installer':
+        import webbrowser
+        webbrowser.open("https://legoshii.iglao.fr/project/custom_installer")
     from rich.progress import Progress
     with Progress() as progress:
         task = progress.add_task("[cyan]Téléchargement en cours...", total=100)
