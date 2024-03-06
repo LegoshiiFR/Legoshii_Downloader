@@ -4,7 +4,7 @@ def __main__():
     import time
     import datetime
     os.system("cls")
-    current_time = datetime.datetime.now().strftime("%d-%m %H:%M:")
+    current_time = datetime.datetime.now().strftime("%d-%m %Hh%M")
     print(
     """[📦] : Version 1.0.4
 [📁] : Legoshii Downloader - Téléchargement des packages
