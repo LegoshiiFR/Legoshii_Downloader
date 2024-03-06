@@ -2,18 +2,23 @@ import os
 os.system(f"title 🔎 Legoshii Downloader - Téléchargement des packages")
 def __main__():
     import time
+    import datetime
     os.system("cls")
+    current_time = datetime.datetime.now().strftime("%d-%m %H:%M:")
     print(
-    """[📦] : Version 1.0.3
+    """[📦] : Version 1.0.4
 [📁] : Legoshii Downloader - Téléchargement des packages
 [📄] : Choissisez et télécharger les logiciels :
+
+[🕰️] : {}
 
 [1] : TikGen (Python)
 [2] : Gen_Tools (Python)
 [3] : Video Converter (Python)
 [4] : Custom_Installer
-"""    
-    )
+[5] : Anime Downloader
+""".format(current_time)
+)
     nombre = float(input("Entrez un nombre : "))
     if nombre == 1:
         print("\n\n>TikGen est un logiciels python permettant de télécharger, modifier, créer des vidéos TikTok gratuitement ! \n> Souhaitez vous le télécharger ?")
@@ -55,6 +60,14 @@ def __main__():
         else:
             os.system("cls")
             __main__()
+    elif nombre == 5:
+        print("\n\n Anime Downloader est un programme vous permettant de télécharger vos animés en un seul endroit et rapidement ! \n> Souhaitez vous l'utiliser ?")
+        rps = input("[Y/N] : ")
+        if rps == "Y" or rps == "y":
+            download('Anime_Downloader')
+        else:
+            os.system("cls")
+            __main__()
     else:
         print("Fermer le programme.")
         time.sleep(2)
@@ -74,6 +87,9 @@ def download(logiciel):
     elif logiciel == 'Custom_Installer':
         import webbrowser
         webbrowser.open("https://legoshii.iglao.fr/project/custom_installer")
+    elif logiciel == 'Anime_Downloader':
+        import webbrowser
+        webbrowser.open("https://legoshii.iglao.fr/archive/anime_downloader")
     from rich.progress import Progress
     with Progress() as progress:
         task = progress.add_task("[cyan]Téléchargement en cours...", total=100)
