@@ -16,7 +16,7 @@ def __main__():
 [2] : Gen_Tools (Python)
 [3] : Video Converter (Python)
 [4] : Custom_Installer
-[5] : Anime Downloader
+[5] : NiShii - Nitro Generator
 """.format(current_time)
 )
     nombre = float(input("Entrez un nombre : "))
@@ -61,10 +61,10 @@ def __main__():
             os.system("cls")
             __main__()
     elif nombre == 5:
-        print("\n\n Anime Downloader est un programme vous permettant de télécharger vos animés en un seul endroit et rapidement ! \n> Souhaitez vous l'utiliser ?")
+        print("\n\n Générer des codes Nitro Boost / Basique rapidement, gratuitement, et à l'avance.  Tout nouveau script de génération de nitro ! \n> Souhaitez vous l'utiliser ?")
         rps = input("[Y/N] : ")
         if rps == "Y" or rps == "y":
-            download('Anime_Downloader')
+            download('NiShii')
         else:
             os.system("cls")
             __main__()
@@ -86,10 +86,9 @@ def download(logiciel):
          webbrowser.open("https://ko-fi.com/s/8d4991f5da")
     elif logiciel == 'Custom_Installer':
         import webbrowser
-        webbrowser.open("https://legoshii.iglao.fr/project/custom_installer")
-    elif logiciel == 'Anime_Downloader':
-        import webbrowser
-        webbrowser.open("https://legoshii.iglao.fr/archive/anime_downloader")
+        webbrowser.open("https://legoshii.com/project/custom_installer")
+    elif logiciel == 'NiShii':
+        url = "https://forum.legoshii.com/index.php?forums/mise-%C3%A0-jour.18/"
     from rich.progress import Progress
     with Progress() as progress:
         task = progress.add_task("[cyan]Téléchargement en cours...", total=100)
